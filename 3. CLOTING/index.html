@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Toko Mercubuana</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Animasi fade-in */
+    @keyframes fadeZoom {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-image: url('assets/bg-fashion.jpg'); /* background sesuai branding pakaian */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      color: #2c2c2c;
+      animation: fadeZoom 1s ease-out;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 30px 20px;
+      max-width: 420px;
+      margin: 20px auto;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      animation: fadeZoom 1s ease-out;
+    }
+
+    .header-img {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      animation: fadeZoom 1s ease-out;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      color: #FF6F61; /* branding warna untuk pakaian kasual */
+      text-shadow: 1px 1px 2px #ccc;
+      animation: fadeZoom 1s ease-out;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      animation: fadeZoom 1s ease-out;
+    }
+
+    .menu-item {
+      background-color: #f5f5f5;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 1em;
+      text-decoration: none;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ddd;
+      transition: 0.3s ease;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-item:hover {
+      background-color: #ffece8;
+      transform: scale(1.03);
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-item i {
+      margin-right: 10px;
+      font-size: 1.2em;
+    }
+
+    @media screen and (max-width: 480px) {
+      .container {
+        width: 90%;
+        padding: 25px 15px;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .menu-item {
+        font-size: 0.95em;
+        padding: 12px;
+      }
+
+      .menu-item i {
+        font-size: 1.1em;
+        margin-right: 8px;
+      }
+
+      .header-img {
+        width: 80px;
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="assets/foto-toko.png" alt="Foto Toko" class="header-img">
+    <h1>Toko Mercubuana</h1>
+    <div class="menu">
+      <a href="https://wa.me/6281234567890" class="menu-item"><i class="fas fa-shirt"></i> WhatsApp</a>
+      <a href="https://t.me/mercubuana" class="menu-item"><i class="fas fa-hat-cowboy"></i> Telegram</a>
+      <a href="https://shopee.co.id/mercubuana" class="menu-item"><i class="fas fa-shoe-prints"></i> Shopee</a>
+      <a href="https://www.tokopedia.com/mercubuana" class="menu-item"><i class="fas fa-socks"></i> Tokopedia</a>
+      <a href="https://maps.google.com/?q=Toko+Mercubuana" class="menu-item"><i class="fas fa-map-pin"></i> Lokasi</a>
+      <a href="https://mercubuana.com" class="menu-item"><i class="fas fa-globe"></i> Website</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr. Landing Page</title>
+
+  <link rel="icon" href="assets/pp.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Baloo 2', cursive;
+      background: linear-gradient(135deg, #fdf1ff, #c1c8ff);
+      margin: 0;
+      padding: 20px;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.85; transform: scale(1.04); }
+    }
+
+    .container {
+      max-width: 680px;
+      margin: auto;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(18px);
+      padding: 24px;
+      border-radius: 20px;
+      box-shadow: 0 10px 24px rgba(140,120,255,0.1);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .profile-img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 12px;
+      border: 2px solid #7e57c2;
+      animation: bounce 1.5s infinite;
+    }
+
+    h1 {
+      font-size: 26px;
+      color: #4a148c;
+    }
+
+    p.tagline {
+      font-size: 14px;
+      color: #6a1b9a;
+    }
+
+    .promo-banner {
+      background: linear-gradient(to right, #e8b5f9, #96a8ff);
+      color: #fff;
+      padding: 14px;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+      margin: 24px 0;
+      box-shadow: 0 0 10px rgba(150,150,255,0.2);
+    }
+
+    .product-slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      gap: 14px;
+      padding-bottom: 16px;
+    }
+
+    .product-card {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border-radius: 14px;
+      padding: 12px;
+      min-width: 160px;
+      text-align: center;
+      animation: twinkle 3s infinite ease-in-out;
+      border: 1px dashed #d1c4e9;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .product-card img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      font-size: 13px;
+      color: #4a148c;
+      margin: 4px 0;
+    }
+
+    .menu-section h2 {
+      text-align: center;
+      margin: 28px 0 18px;
+      font-size: 18px;
+      color: #4a148c;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .menu a {
+      text-decoration: none;
+      background-color: #f3e5f5;
+      color: #6a1b9a;
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 240px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .menu a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 12px rgba(160,130,250,0.1);
+    }
+
+    .menu img {
+      width: 22px;
+      height: 22px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      .product-card img {
+        width: 80px;
+      }
+
+      .menu a {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="assets/pp.png" alt="Logo Dr. Landing Page" class="profile-img" />
+      <h1>Dr. Landing Page</h1>
+      <p class="tagline">Landing Page Murah Untuk Usaha Kamu ✨</p>
+    </div>
+
+    <div class="promo-banner">🎁 Cuma Modal 35K Untuk Dapetin Landing Page Keren Kaya Gini! Sudah Termasuk Publish Loo!!
+    
+    </div>
+
+    <div class="product-slider">
+      <div class="product-card">
+        <img src="assets/produk-1.png" alt="Produk 1" />
+        <p>Cosmic Lip Serum</p>
+        <p>Rp 39.000</p>
+      </div>
+      <div class="product-card">
+        <img src="assets/produk-2.png" alt="Produk 2" />
+        <p>Nebula Smartwatch</p>
+        <p>Rp 249.000</p>
+      </div>
+      <div class="product-card">
+        <img src="assets/produk-3.png" alt="Produk 3" />
+        <p>Galaxy Mist</p>
+        <p>Rp 65.000</p>
+      </div>
+      <div class="product-card">
+        <img src="assets/produk-4.png" alt="Produk 4" />
+        <p>Starlight Hand Cream</p>
+        <p>Rp 32.000</p>
+      </div>
+      <div class="product-card">
+        <img src="assets/produk-5.png" alt="Produk 5" />
+        <p>Moonbeam Facial Foam</p>
+        <p>Rp 55.000</p>
+      </div>
+      <div class="product-card">
+        <img src="assets/produk-6.png" alt="Produk 6" />
+        <p>Nova Vitamin Capsule</p>
+        <p>Rp 73.000</p>
+      </div>
+    </div>
+
+    <div class="menu-section">
+      <h2>📞 Hubungi Kami</h2>
+      <div class="menu">
+        <a href="https://wa.me/6281234567890" target="_blank">
+          <img src="assets/whatsapp.png" alt="WhatsApp" /> WhatsApp
+        </a>
+        <a href="https://t.me/username" target="_blank">
+          <img src="assets/telegram.png" alt="Telegram" /> Telegram
+        </a>
+        <a href="https://shopee.co.id/dr.landingpage" target="_blank">
+          <img src="assets/shopee.png" alt="Shopee" /> Shopee
+        </a>
+        <a href="https://www.tokopedia.com/dr.landingpage" target="_blank">
+          <img src="assets/lynk.png" alt="Tokopedia" /> Lynk.id
+        </a>
+          </div>
+    </div>
+
+    <footer>
+      © 2025 Dr. Landing Page — Powered by Kejeniusan Bisnis Kamu ✨
+    </footer>
+  </div>
+</body>
+</html>
+
