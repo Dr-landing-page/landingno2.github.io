@@ -2,14 +2,21 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <title>Dr. Landing Page - Elegan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toko Mercubuana - Elegan</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    @keyframes floatShake {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      25% { transform: translateY(-6px) rotate(-2deg); }
+      50% { transform: translateY(6px) rotate(2deg); }
+      75% { transform: translateY(-3px) rotate(0deg); }
     }
 
     body {
@@ -25,11 +32,14 @@
     .container {
       background-color: #ffffff;
       padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      border-radius: 18px;
+      box-shadow: 
+        0 10px 24px rgba(0,0,0,0.1),
+        0 -6px 12px rgba(255,255,255,0.4) inset;
       max-width: 400px;
       width: 100%;
       text-align: center;
+      transform: translateZ(0);
     }
 
     .profile-img {
@@ -39,6 +49,13 @@
       object-fit: cover;
       margin-bottom: 20px;
       border: 2px solid #333;
+      animation: floatShake 3s ease-in-out infinite;
+      transform: rotateX(6deg) rotateY(-4deg);
+      transition: transform 0.5s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05) rotateX(0deg) rotateY(0deg);
     }
 
     h1 {
@@ -51,6 +68,16 @@
       font-size: 14px;
       color: #666;
       margin-bottom: 20px;
+    }
+
+    .promo-banner {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 16px;
     }
 
     .menu {
@@ -71,25 +98,17 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
     .menu a:hover {
       background-color: #d0d0d0;
+      transform: scale(1.03);
     }
 
     .menu img {
       width: 24px;
       height: 24px;
-    }
-
-    .promo-banner {
-      background-color: #333;
-      color: #fff;
-      padding: 12px;
-      border-radius: 8px;
-      font-size: 14px;
-      font-weight: 600;
     }
 
     footer {
@@ -121,9 +140,13 @@
 <body>
 
   <div class="container">
-    <img src="https://via.placeholder.com/100" alt="Foto Toko" class="profile-img">
-    <h1>Toko Mercubuana</h1>
+    <img src="assets/foto-toko.png" alt="Foto Toko" class="profile-img">
+<h1>Dr. Landing Page</h1>
     <p class="tagline">Belanja elegan, cepat, dan terpercaya. Temukan produk terbaik kami.</p>
+
+    <div class="promo-banner">
+      🎁 Promo Eksklusif: Diskon 25% untuk pelanggan baru!
+    </div>
 
     <div class="menu">
       <a href="https://wa.me/6281234567890" target="_blank">
@@ -152,11 +175,7 @@
       </a>
     </div>
 
-    <div class="promo-banner">
-      🎁 Promo Eksklusif: Diskon 25% untuk pelanggan baru!
-    </div>
-
-    <footer>© 2025 Toko Mercubuana — Elegan & Terpercaya</footer>
+    <footer>© 2025 Dr. Landing Page — Elegan & Terpercaya</footer>
   </div>
 
 </body>
